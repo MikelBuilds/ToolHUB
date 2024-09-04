@@ -1,5 +1,1 @@
-# ToolBOX
-MINI PROJECT 1-A => TOOLBOX <br>
-Mikel <br>
-Dhruvin <br>
-Pranav  <br>
+<h1>AIM</h1><br><h3>To create online platform to simplify everyday tasks by offering a collection of tools in one convenient location</h3>
