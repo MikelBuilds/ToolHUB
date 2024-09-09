@@ -11,25 +11,30 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20px;
+    padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+
+
 .logo h1 {
-    margin: 0;
+    margin-left: 70px;
     color: red;
+    font-size: xx-large;
+
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    margin: 0;
+    margin-right: 60px;
     padding: 0;
 }
 
 .nav-links li {
     margin: 0 25px;
     position: relative;
+    font-size: x-large;
 }
 
 .nav-links a {
@@ -64,9 +69,11 @@ button {
     color: white;
     background-color: red;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
+    font-family: cursive;
+    
 }
 
 .grid-container {
