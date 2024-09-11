@@ -4152,7 +4152,7 @@ body.remove .header_tabs_area.tab_fixed .header_tab_items {
   position: relative !important;
 }
 
-> .art-fullscreen-web + .col-lg-5 {
+ .art-fullscreen-web + .col-lg-5 {
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -15582,7 +15582,7 @@ blockquote .author {
 }
 
 .see_btn {
-  font-size: 14px;
+  font-size: 30px;
   line-height: 20px;
   font-weight: 500;
   color: var(--brand_color);
@@ -15598,7 +15598,7 @@ blockquote .author {
 }
 
 .doc_features_item {
-  width: 33.3333333333%;
+  width: 49.333%;
   float: left;
   padding: 35px 30px;
   border-bottom: 1px solid var(--border_on_highlight);
@@ -15608,8 +15608,8 @@ blockquote .author {
   margin-right: 15px;
 }
 .doc_features_item h4 {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 27px;
+  line-height: 30px;
   color: var(--black_800);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
