@@ -1,0 +1,260 @@
+/* * {
+    padding: 1px;
+    margin: 3px;
+}
+
+body {
+    background-color: beige;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: solid black;
+}
+
+nav ul {
+    display: flex;
+    font-size: 24px;
+  line-height: 0;
+  letter-spacing: 0.027em;
+  font-weight: 600;
+  font-style: normal;
+}
+nav ul :hover {
+    cursor: pointer;
+   
+}
+
+nav ul li {
+    list-style: none;
+    margin: 20px;
+    font-weight: 600;
+}
+
+.logo {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 1000;
+}
+
+
+.container form input[type='number'],
+select,
+label {
+    font-size: 25px;
+    width: 23vw;
+    margin-bottom: 23px;
+    display: block;
+    font-weight: 600;
+}
+
+.btn {
+    width: 144px;
+    padding: 5px 8px;
+    font-size: 20px;
+    background: #e0d0f5;
+    color: black;
+    border-radius: 23px;
+    cursor: pointer;
+}
+
+.output {
+    display: none;
+    margin-top: 20px;
+}
+
+.output table {
+    width: 50vw;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.output table th, .output table td {
+    padding: 8px;
+    border: 1px solid black;
+}
+
+input {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    background-color: #d3d2cc;
+    color: rgb(40, 51, 70);
+    font-weight: 600;
+    border-radius: 8px;
+}
+@media (max-width: 600px) {
+
+
+    nav {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin: 20px 13px;
+        letter-spacing: -0.029em
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 95vw;
+    }
+
+    .container form input[type='number'],
+    select,
+    label {
+        width: 80vw;
+    }
+}
+.usd-price {
+    font-size: 25px;
+    margin: 20px auto;
+    text-align: center;
+    display: none;
+} */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensure consistent box sizing */
+}
+
+body {
+    background-color: beige;
+    font-family: "Poppins", sans-serif;
+    margin: 0; /* Remove default margin */
+}
+
+nav {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center items */
+    padding: 20px;
+    border-bottom: solid black;
+    position: fixed; /* Fix navbar to the top */
+    width: 100%; /* Ensure navbar spans full width */
+    top: 0;
+    left: 0;
+    background: white; /* Set background color */
+    z-index: 1000; /* Ensure navbar is above other elements */
+    transition: all 0.3s ease; /* Smooth transition for background color */
+}
+
+nav ul {
+    display: flex;
+    font-size: 24px;
+    line-height: 0;
+    letter-spacing: 0.027em;
+    font-weight: 600;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px; /* Adjusted margin for spacing */
+    font-weight: 600;
+}
+
+.logo {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 1000;
+}
+
+/* Adding animation for navbar on scroll */
+body.scrolled nav {
+    background-color: #f0f0f0; /* Change background color on scroll */
+}
+
+.container {
+    margin-top: 80px; /* Adjust margin to account for fixed navbar */
+}
+
+.container form input[type='number'],
+select,
+label {
+    font-size: 25px;
+    width: 23vw;
+    margin-bottom: 23px;
+    display: block;
+    font-weight: 600;
+}
+
+.btn {
+    width: 144px;
+    padding: 5px 8px;
+    font-size: 20px;
+    background: #e0d0f5;
+    color: black;
+    border-radius: 23px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth transition for button */
+}
+
+.btn:hover {
+    background: #d0b0f5; /* Change background color on hover */
+}
+
+.output {
+    display: none;
+    margin-top: 20px;
+}
+
+.output table {
+    width: 50vw;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.output table th, .output table td {
+    padding: 8px;
+    border: 1px solid black;
+}
+
+input {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    background-color: #d3d2cc;
+    color: rgb(40, 51, 70);
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.usd-price {
+    font-size: 25px;
+    margin: 20px auto;
+    text-align: center;
+    display: none;
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 95vw;
+    }
+
+    .container form input[type='number'],
+    select,
+    label {
+        width: 80vw;
+    }
+}

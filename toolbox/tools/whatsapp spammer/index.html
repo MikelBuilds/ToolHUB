@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Your Friend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Spam Your Friend</h1>
+        <p>Want to have some fun with your friends? Copy the JavaScript code below and paste it into the console of your browser when you're chatting with someone. The script will allow you to send a message multiple times automatically.</p>
+
+        <p><strong>How to use:</strong></p>
+        <ul>
+            <li>Open the chat window of the person you want to spam.</li>
+            <li>Open the browser console by pressing <strong>F12</strong> or <strong>Ctrl+Shift+I</strong>.</li> or <strong>right click and select inspect</strong>
+            <li>Go to the "Console" tab and paste the script below.</li>
+            <li>Set the number of messages and the message content to spam.</li>
+        </ul>
+
+        <textarea id="code" readonly>
+            /* To initiate the process of automated messaging, please follow these steps:
+1. Right-click on the webpage and select "Inspect" to open the developer tools.
+2. Navigate to the "Console" tab.
+3. Ensure that pasting is enabled.
+4. Paste the provided code into the console. */
+
+
+let dataTransfer = new DataTransfer();
+let box = document.querySelectorAll("[role=textbox]")[1];
+if (!box) {
+  alert("No chat open, Make sure you have opened the chat you want to spam.");
+  throw new Error(
+    "No chat open, Make sure you have opened the chat you want to spam."
+  );
+}
+
+var count = prompt(
+  "Enter number of messages: \nPlease Enter a number between 0 and 100",
+  "10"
+);
+
+if (!count || isNaN(count) || count < 0 || count > 100) {
+  alert(
+    "Please enter only NUMBER between 0 and 100. \nYou can re-run the script now."
+  );
+} else {
+
+  var message = prompt("MESSAGE YOU WANT TO SPAM : ", "Hello from spammer...");
+
+  if (message == null || message == "") {
+    alert("Please enter a message to spam. \nYou can re-run the script now.");
+  } else {
+    console.clear();
+    dataTransfer.setData("text/plain", message);
+
+    (async () => {
+      for (let i = 0; i < count; i++) {
+
+        box.focus();
+        box.dispatchEvent(
+          new ClipboardEvent("paste", {
+            clipboardData: dataTransfer,
+
+            bubbles: true,
+            cancelable: true,
+          })
+        );
+
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+
+        box.parentElement.parentElement.parentElement.children[1].children[0].click();
+        console.log(`"${message}" sent -> ${i + 1} times`);
+      }
+    })();
+  }
+}
+        </textarea>
+
+        <button onclick="copyCode()">Copy Code</button>
+
+        <p id="status"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

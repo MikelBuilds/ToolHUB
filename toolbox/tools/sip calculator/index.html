@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        footer{
+            font-family: "Poppins", system-ui;
+            font-weight: 450;
+        }
+    </style>
+    
+</head>
+<body>
+  
+    <div class="heading">
+        <h1>SIP CALCULATOR</h1>
+    </div>
+    <div class="sip-calculator">
+        
+        <div class="tabs">
+            <button class="tab active">SIP</button>
+            <button class="tab">Lumpsum</button>
+        </div>
+        <div class="input-section">
+            <label for="monthly-investment">Monthly investment</label>
+            <input type="range" id="monthly-investment" min="500" max="100000" value="5000" oninput="updateValue('monthly', this.value)">
+            <span id="monthly-investment-value">₹ 5000</span>
+    
+            <label for="return-rate">Expected return rate (p.a)</label>
+            <input type="range" id="return-rate" min="2" max="50" value="10" oninput="updateValue('rate', this.value)">
+            <span id="return-rate-value">10%</span>
+    
+            <label for="time-period">Time period (Years)</label>
+            <input type="range" id="time-period" min="1" max="100" value="10" oninput="updateValue('time', this.value)">
+            <span id="time-period-value">10Yr</span>
+        </div>
+    
+        <div class="result-section">
+            <p>Invested amount: <span id="invested-amount">₹30,00,000</span></p>
+            <p>Est. returns: <span id="est-returns">₹28,08,477</span></p>
+            <p>Total value: <span id="total-value">₹58,08,477</span></p>
+        </div>
+    </div>
+    
+   
+    <footer>
+        Copyright &copy; ALL RIGHTS RESERVED
+    </footer>
+    <script src="script.js">
+          
+    </script>
+</body>
+</html>
