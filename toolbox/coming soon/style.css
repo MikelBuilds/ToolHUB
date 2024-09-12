@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Black background */
+  }
+  
+  .coming-soon-container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    color: #fff; /* White text for heading */
+  }
+  
+  p {
+    font-size: 1.5rem;
+    color: #00e5ff; /* Turquoise accent color for the paragraph */
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  .delay {
+    animation-delay: 1s;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
