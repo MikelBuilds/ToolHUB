@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvertCase Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flex">
+
+            <textarea id="inputText" rows="10" cols="55" placeholder="Enter your text here....."></textarea><br><br>
+        
+            <button onclick="convertToUpperCase()">UPPERCASE</button>
+            <button onclick="convertToLowerCase()">lowercase</button>
+            <button onclick="convertToSentenceCase()">Sentence case</button>
+            <button onclick="convertToTitleCase()">Title Case</button><br><br>
+            <button onclick="convertToInverseCase()">iNVERSE cASE</button>
+            <button onclick="convertToAlternatingCase()">AlTeRnAtInG CaSe</button><br><br>
+        
+            <textarea id="outputText" rows="10" cols="55" readonly></textarea>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
