@@ -1,4 +1,4 @@
-/* * {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box; /* Ensure consistent box sizing */
@@ -216,4 +216,4 @@ input:hover {
     label {
         width: 80vw;
     }
-} */
+} 
