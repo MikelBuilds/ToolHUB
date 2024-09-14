@@ -1,46 +1,94 @@
+/* Base styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text for contrast */
 }
 
+/* Container styles */
 .container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #2b2b2b; /* Darker container */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow */
     text-align: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Heading styles */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4da3ff; /* Accent color for heading */
+}
+
+/* Textarea styles */
 textarea {
-    width: 300px;
-    height: 150px;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+    width: 95%;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #444; /* Darker border */
+    background-color: #1e1e1e; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 1.5;
+    resize: vertical;
+    transition: border-color 0.3s ease;
 }
 
+textarea:focus {
+    border-color: #4da3ff; /* Focus color */
+    outline: none;
+    box-shadow: 0 0 5px rgba(77, 163, 255, 0.5);
+}
+
+/* Button styles */
 button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
-    background-color: #28a745;
-    color: white;
-    font-size: 16px;
-    border-radius: 4px;
+    background-color: #4da3ff; /* Accent button color */
+    color: #1a1a1a; /* Dark text on button */
+    font-size: 1rem;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #3584d4; /* Darker shade for hover */
+    box-shadow: 0 2px 10px rgba(53, 132, 212, 0.3); /* Button shadow on hover */
 }
 
+/* Output styles */
 #output {
     margin-top: 20px;
-    font-size: 14px;
+    padding: 15px;
+    background-color: #333; /* Darker background for output */
+    color: #f0f0f0; /* Light text */
+    border-radius: 8px;
+    border: 1px solid #444; /* Darker border */
+    font-size: 1rem;
+    text-align: left;
+    word-wrap: break-word;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    textarea {
+        height: 150px;
+    }
 }
