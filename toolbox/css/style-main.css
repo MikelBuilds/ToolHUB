@@ -53,7 +53,7 @@ a:hover, a:focus {
 }
 
 body {
-  line-height: 28px;
+  line-height: 20px;
   font-size: 16px;
   height: 100%;
   font-family: "Poppins", system-ui;
@@ -15569,7 +15569,7 @@ blockquote .author {
 }
 
 .doc_features_item {
-  width: 49.333%;
+  width: 48.333%;
   float: left;
   padding: 35px 30px;
   border-bottom: 1px solid var(--border_on_highlight);
