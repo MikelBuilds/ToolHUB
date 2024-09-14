@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.flex{
+    border: 2px solid black;
+    padding: 20px;
+}
+
+button{
+    margin: 0px 15px;
+    background-color: rgb(231, 45, 45);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+textarea{
+    border: 1px solid black;
+    font-size: larger;
+}

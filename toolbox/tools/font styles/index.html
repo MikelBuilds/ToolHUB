@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Style Chooser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Font Style Chooser</h1>
+
+        <!-- Input for text -->
+        <textarea id="text-input" placeholder="Type your text here..."></textarea>
+
+        <!-- Font selection -->
+        <label for="font-family">Font Family:</label>
+        <select id="font-family">
+            <option value="Arial">Arial</option>
+            <option value="Abadi MT Condensed Light">Abadi MT Condensed Light</option>
+            <option value="Albertus Extra Bold">Albertus Extra Bold</option>
+            <option value="Albertus Medium">Albertus Medium</option>
+            <option value="Antique Olive">Antique Olive</option>
+            <option value="Arial Black">Arial Black</option>
+            <option value="Arial MT">Arial MT</option>
+            <option value="Arial Narrow">Arial Narrow</option>
+            <option value="Bazooka">Bazooka</option>
+            <option value="Book Antiqua">Book Antiqua</option>
+            <option value="Bookman Old Style">Bookman Old Style</option>
+            <option value="Boulder">Boulder</option>
+            <option value="Calisto MT">Calisto MT</option>
+            <option value="Calligrapher">Calligrapher</option>
+            <option value="Century Gothic">Century Gothic</option>
+            <option value="Century Schoolbook">Century Schoolbook</option>
+            <option value="Cezanne">Cezanne</option>
+           <option value="CG Omega"> CG Omega</option>
+            <option value="CG Times">CG Times</option>
+            <option value="Charlesworth">Charlesworth</option>
+            <option value="Chaucer">Chaucer</option>
+           <option value="Clarendon Condensed"> Clarendon Condensed</option>
+           <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Copperplate Gothic Bold">Copperplate Gothic Bold</option>
+            <option value="Copperplate Gothic Ligh">Copperplate Gothic Light</option>
+            <option value="Cornerstone">Cornerstone</option>
+            <option value="Coronet">Coronet</option>
+           <option value="Courier"> Courier</option>
+           <option value="Courier New">Courier New</option>
+            <option value="Cuckoo">Cuckoo</option>
+            <option value="Dauphin">Dauphin</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Fransiscan">Fransiscan</option>
+            <option value="Garamond">Garamond</option>
+            <option value="Geneva">Geneva</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Haettenschweiler">Haettenschweiler</option>
+            <option value="Heather">Heather</option>
+           <option value="Helvetica"> Helvetica</option>
+            <option value="Herald">Herald</option>
+           <option value="Jester"> Jester</option>
+           <option value="Letter Gothic"> Letter Gothic</option>
+           <option value="Lithograph"> Lithograph</option>
+            <option value="Lithograph Light">Lithograph Light</option>
+           <option value="Long Island"> Long Island</option>
+           <option value="Lucida Console"> Lucida Console</option>
+           <option value="Lucida Handwriting"> Lucida Handwriting</option>
+           <option value=" Lucida Sans"> Lucida Sans</option>
+           <option value="Lucida Sans Unicode"> Lucida Sans Unicode</option>
+           <option value="Marigold"> Marigold</option>
+           <option value="Market"> Market</option>
+           <option value=" Matisse ITC"> Matisse ITC</option>
+           <option value="MS LineDraw"> MS LineDraw</option>
+           <option value="News GothicMT"> News GothicMT</option>
+           <option value="OCR A Extended"> OCR A Extended</option>
+           <option value="Old Century"> Old Century</option>
+            <option value="Pegasus">Pegasus</option>
+           <option value="Pickwick"> Pickwick</option>
+           <option value="Poster"> Poster</option>
+           <option value="Pythagoras"> Pythagoras</option>
+           <option value="Sceptre"> Sceptre</option>
+           <option value=" Sherwood"> Sherwood</option>
+           <option value="Signboard"> Signboard</option>
+           <option value="Socket"> Socket</option>
+           <option value="Steamer"> Steamer</option>
+           <option value="Storybook"> Storybook</option>
+           <option value=" Subway"> Subway</option>
+           <option value=" Tahoma"> Tahoma</option>
+           <option value="Technical"> Technical</option>
+           <option value="Teletype"> Teletype</option>
+           <option value=" Tempus Sans ITC"> Tempus Sans ITC</option>
+           <option value="Times"> Times</option>
+           <option value="Times New Roman">Times New Roman</option>
+           <option value="Times New Roman PS"> Times New Roman PS</option>
+           <option value=" Trebuchet MS"> Trebuchet MS</option>
+           <option value=" Tristan"> Tristan</option>
+           <option value=" Tubular"> Tubular</option>
+           <option value="Unicorn"> Unicorn</option>
+           <option value=" Univers"> Univers</option>
+           <option value="Univers Condensed"> Univers Condensed</option>
+           <option value=" Vagabond"> Vagabond</option>
+           <option value="Verdana">Verdana</option>
+           <option value=" Westminster"> Westminster</option>
+           <option value=" ZapfEllipt BT"> ZapfEllipt BT</option>
+           <option value="ZapfHumnst BT"> ZapfHumnst BT</option>
+           <option value="ZapfHumnst Dm BT"> ZapfHumnst Dm BT</option>
+           <option value="Zurich BlkEx BT"> Zurich BlkEx BT</option>
+           <option value="Zurich Ex BT"> Zurich Ex BT</option>
+            
+
+
+        </select>
+
+        <!-- Font size selection -->
+        <label for="font-size">Font Size:</label>
+        <input type="number" id="font-size" value="16" min="10" max="72">px
+
+        <!-- Font color selection -->
+        <label for="font-color">Font Color:</label>
+        <input type="color" id="font-color" value="#000000">
+
+        <!-- Preview section -->
+        <h2>Preview</h2>
+        <div id="preview"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
