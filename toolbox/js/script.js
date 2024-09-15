@@ -5,7 +5,7 @@ const suggBox = searchWrapper.querySelector(".autocom-box");
 
 // Example suggestions array (you should replace this with your actual suggestions)
 const suggestions = [
-    "sip calculator",
+   
     "pdf to word",
     "emi calculator"
     // Add more suggestions here
