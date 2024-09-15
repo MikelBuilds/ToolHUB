@@ -13,7 +13,7 @@ body {
     align-items: center; /* Center horizontally */
     justify-content: flex-start; /* Position children at the top */
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #000000;
 }
 
 nav {
@@ -28,6 +28,11 @@ nav h1 {
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0.4em;
+    color: azure;
+    background-color: rgb(35, 20, 0);
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
 }
 
 .container {
@@ -39,9 +44,10 @@ nav h1 {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    border-width: 2px; /* Border width */
+    border-width: 4px; /* Border width */
     border-style: solid; /* Border style */
     border-color: red green blue yellow;
+    padding: 20px 40px;
 }
 
 form {
@@ -55,7 +61,7 @@ form {
 label {
     font-weight: 500;
     font-size: 18px;
-    color: #333;
+    color: #332f2f;
 }
 
 input {
@@ -92,4 +98,8 @@ button:hover {
     color: #d9534f;
     font-size: 30px;
     font-weight: 700;
+}
+
+footer{
+    color: azure;
 }
