@@ -277,39 +277,15 @@
                 <form action="#" class="header_search_form">
                     <div class="header_search_form_info">
                         <div class="form-group">
-                            <div class="input-wrapper">
+                            <div class="input-wrapper search-input">
                                 <i class="icon_search"></i>
-                                <input type="search" id="searchbox" autocomplete="off" name="search"
-                                    placeholder="Search the Tools">
-                                <div class="header_search_form_panel">
-                                    <ul class="list-unstyled">
-                                        <li>Help Desk
-                                            <ul class="list-unstyled search_item">
-                                                <li><span>Configuration</span><a href="#">How to edit host and
-                                                        port?</a></li>
-                                                <li><span>Configuration</span><a href="#">The dev Property</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>Support
-                                            <ul class="list-unstyled search_item">
-                                                <li><span>Pages</span><a href="#">The asyncData Method</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>Documentation
-                                            <ul class="list-unstyled search_item">
-                                                <li><span>Getting Started</span><a href="#">The asyncData Method</a>
-                                                </li>
-                                                <li><span>Getting Started</span><a href="#">The asyncData Method</a>
-                                                </li>
-                                                <li><span>Getting Started</span><a href="#">The asyncData Method</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                <input type="search" id="searchbox" autocomplete="off" name="search" placeholder="Search the Tools">
+                                <div class="autocom-box" id="suggest">
+                                    <!-- Suggestions will be injected here dynamically via JS -->
                                 </div>
-
                             </div>
                         </div>
+                        
 
                     </div>
                     <div class="header_search_keyword">
@@ -328,7 +304,9 @@
     <section class="doc_features_area">
         <img class="doc_features_shap" src="img/new/shap_white.png" alt="">
         <div class="container">
+            
             <div class="doc_features_inner">
+                <h1 id="ab">Widely Used Tools</h1>
                 <div class="media doc_features_item wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="0.5s">
                     <img src="img/new/icon1.png" alt="">
                     <div class="media-body">
@@ -598,6 +576,8 @@
     <script src="js/plugins.js"></script>
     <script src="../../unpkg.com/ionicons%405.4.0/dist/ionicons.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/suggestions.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </body>

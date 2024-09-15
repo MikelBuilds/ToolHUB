@@ -51,7 +51,26 @@ a:hover, a:focus {
   outline: none;
   color: var(--brand_color);
 }
-
+#suggest{
+  background-color: rgb(36, 34, 34);
+  color: white;
+  border-radius: 8px 10px;
+}
+#suggest:hover{
+  background-color: rgb(36, 34, 34);
+ 
+  
+}
+#ab{
+  text-align: center;
+  margin-top: 5px;
+}
+#ab:hover{
+  text-align: center;
+  margin-top: 5px;
+  color: lightblue;
+  transform: scale(1.1);
+}
 body {
   line-height: 20px;
   font-size: 16px;
@@ -69,6 +88,37 @@ p {
 :focus {
   outline: none;
 }
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+
+.autocom-box li:hover{
+  background: #efefef;
+}
+
 
 h1,
 h2,
