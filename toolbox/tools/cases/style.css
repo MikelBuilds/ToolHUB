@@ -1,25 +1,82 @@
-.container{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
-    padding: 20px;
+    height: 120vh; /* Center content vertically */
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text */
 }
 
-.flex{
-    border: 2px solid black;
-    padding: 20px;
+/* Flex container styles */
+.flex {
+    background-color: #2b2b2b; /* Darker background for the form area */
+    border: 2px solid #444; /* Subtle border */
+    border-radius: 12px; /* Rounded corners */
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    text-align: center;
 }
 
-button{
-    margin: 0px 15px;
-    background-color: rgb(231, 45, 45);
-    color: white;
-    padding: 10px;
+/* Textarea styles */
+textarea {
+    width: 90%; /* Full width inside the flex container */
+    max-width: 90%; /* Prevent overflow */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #444; /* Darker border */
+    background-color: #1e1e1e; /* Darker background */
+    color: #f0f0f0; /* Light text */
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 1.5;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #4da3ff; /* Focus color */
+    outline: none;
+    box-shadow: 0 0 5px rgba(77, 163, 255, 0.5); /* Focus shadow */
+}
+
+/* Button styles */
+button {
+    margin: 10px 5px; /* Space between buttons */
+    background-color: #4da3ff; /* Accent color */
+    color: #1a1a1a; /* Dark text on button */
+    padding: 10px 20px;
+    font-size: 1rem;
     font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-textarea{
-    border: 1px solid black;
-    font-size: larger;
+button:hover {
+    background-color: #3584d4; /* Darker shade on hover */
+    box-shadow: 0 2px 10px rgba(53, 132, 212, 0.3); /* Button shadow on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .flex {
+        width: 90%; /* Reduce width on smaller screens */
+        padding: 20px;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    button {
+        width: 100%; /* Full width buttons on smaller screens */
+        margin: 10px 0; /* Space between buttons */
+    }
 }
