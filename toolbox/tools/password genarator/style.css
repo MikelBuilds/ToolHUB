@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,16 +9,16 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     width: 300px;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #ffffff;
 }
 
 .generator-settings, .checkbox-group, .password-strength {
@@ -33,7 +33,7 @@ h1 {
 .checkbox-group label {
     display: block;
     margin-bottom: 10px;
-    color: #555;
+    color: #ffffff;
 }
 
 #password-strength-meter {
