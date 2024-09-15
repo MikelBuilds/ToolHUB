@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #131417;
+    background-color: #ffffff;
     font-family: "Poppins", sans-serif;
     margin: 0; /* Remove default margin */
     animation: fadeIn 1.5s ease-in-out; /* Page fade-in on load */
@@ -100,7 +100,7 @@ label:hover {
     padding: 5px 8px;
     font-size: 20px;
     background: #e0d0f5;
-    color: black;
+    color: rgb(255, 255, 255);
     border-radius: 23px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for button */
