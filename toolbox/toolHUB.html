@@ -19,6 +19,36 @@
     <link rel="stylesheet" href="css/style-main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .js-darkmode-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.tab-btn {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.dark_mode_switcher {
+    display: none;
+}
+
+.dark_mode_switcher:checked + .ball {
+    transform: translateX(40px);
+}
+
+    </style>
     <title>Toolhub</title>
 </head>
 
@@ -174,46 +204,8 @@
                             </div>
 
                         </div>
-                        <div class="tab-pane fade" id="v-pills-content" role="tabpanel"
-                            aria-labelledby="v-pills-content-tab">
-                            <div class="d-flex">
-                                <ul class="list-unstyled tab_list">
-                                    <li><a href="doc-content-image.html">Image</a></li>
-                                    <li><a class="active" href="doc-content-tables.html">Tables</a></li>
-                                    <li><a href="doc-content-video.html">Video</a></li>
-                                    <li><a href="typography.html">Typography</a></li>
-                                    <li><a href="doc-content-tooltip.html">Tooltips &amp;
-                                            Direction</a></li>
-                                </ul>
-                            </div>
-                            <div class="text">
-                                <a href="#">
-                                    <p>More Categories</p>
-                                </a>
-                                <a href="#">
-                                    <p>All docs</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="v-pills-pages" role="tabpanel"
-                            aria-labelledby="v-pills-pages-tab">
-                            <div class="d-flex">
-                                <ul class="list-unstyled tab_list">
-                                    <li> <a href="onepage.html">Onepage</a> </li>
-                                    <li> <a href="doc-main.html">Doc Topics</a></li>
-                                    <li> <a href="doc-tour.html">Cheatsheet</a> </li>
-                                    <li> <a href="doc-changelog.html">Changelog</a> </li>
-                                </ul>
-                            </div>
-                            <div class="text">
-                                <a href="#">
-                                    <p>More Categories</p>
-                                </a>
-                                <a href="doc-main.html">
-                                    <p>All docs</p>
-                                </a>
-                            </div>
-                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -241,15 +233,17 @@
             <div class="right-nav">
                 <a class="nav_btn" href="#">Sign Up</a>
                 <div class="px-2 js-darkmode-btn" title="Toggle dark mode">
-                    <label for="something" class="tab-btn tab-btns">
-                        <ion-icon name="moon"></ion-icon>
+                    <label for="dark_mode_switcher" >
+                        <i class="fas fa-moon"></i>
+    
                     </label>
-                    <label for="something" class="tab-btn">
-                        <ion-icon name="sunny"></ion-icon>
+                    <label for="dark_mode_switcher" >
+                        <i class="fas fa-sun" style="margin-left: 5px;"></i>
                     </label>
-                    <label class=" ball" for="something"></label>
-                    <input type="checkbox" name="something" id="something" class="dark_mode_switcher">
+                    <label class="ball" for="dark_mode_switcher"></label>
+                    <input type="checkbox" name="something" id="dark_mode_switcher" class="dark_mode_switcher">
                 </div>
+                
             </div>
     </div>
     </div>
