@@ -1,42 +1,75 @@
+/* Base styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #1a1a1a; /* Dark background */
+    color: #f0f0f0; /* Light text for contrast */
 }
 
+/* Container styles */
 .container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    background-color: #2b2b2b; /* Darker background for the container */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+    width: 90%;
+    max-width: 500px;
     text-align: center;
 }
 
+/* Textarea styles */
 textarea {
-    width: 100%;
+    width: 90%;
     height: 150px;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #444; /* Darker border */
+    background-color: #1e1e1e; /* Dark background */
+    color: #f0f0f0; /* Light text */
     font-size: 16px;
+    transition: border-color 0.3s ease;
 }
 
+textarea:focus {
+    border-color: #4da3ff; /* Focus color */
+    outline: none;
+    box-shadow: 0 0 5px rgba(77, 163, 255, 0.5); /* Focus shadow */
+}
+
+/* Statistics section */
 .statistics {
     margin-top: 20px;
     text-align: left;
+    background-color: #333; /* Slightly lighter dark background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
 .statistics p {
     margin: 5px 0;
     font-size: 18px;
+    color: #f0f0f0; /* Light text */
 }
 
+/* Bold text inside statistics */
 span {
     font-weight: bold;
+    color: #4da3ff; /* Accent color */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    textarea {
+        height: 120px;
+    }
 }
