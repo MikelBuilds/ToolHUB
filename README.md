@@ -3,6 +3,8 @@
 
 Welcome to **ToolHub**! This repository is a collection of web-based tools developed using **HTML**, **CSS**, and **JavaScript**.
 
+<h3>🔧 This repository is currently in the **development stage**</h3>
+
 ## Project Overview
 
 ToolHub is built to provide a range of useful, web-based utilities, each tool organized in its own folder with the required code. The project aims to simplify access to small but powerful web tools that can be used across different applications.
