@@ -64,6 +64,15 @@
       }
     });
   });
+  document.querySelectorAll('nav-linker').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('#more_see'));
+        target.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
   function navbarFixedTwo() {
     if ($("#stickyTwo").length) {
