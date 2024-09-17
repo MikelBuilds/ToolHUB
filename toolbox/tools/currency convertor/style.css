@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box; /* Ensure consistent box sizing */
@@ -9,6 +9,7 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0; /* Remove default margin */
     animation: fadeIn 1.5s ease-in-out; /* Page fade-in on load */
+    color: #000; /* Black text */
 }
 
 nav {
@@ -22,7 +23,8 @@ nav {
     width: 100%; /* Ensure navbar spans full width */
     top: 0;
     left: 0;
-    background: white; /* Set background color */
+    background: black; /* Black background for the navbar */
+    color: white; /* White text */
     z-index: 1000; /* Ensure navbar is above other elements */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color */
 }
@@ -39,29 +41,19 @@ nav ul li {
     list-style: none;
     margin: 0 20px; /* Adjusted margin for spacing */
     font-weight: 600;
+    color: white; /* White text for the nav items */
     opacity: 0;
     animation: slideIn 0.5s ease forwards; /* Animation for menu items */
 }
 
-nav ul li:nth-child(1) {
-    animation-delay: 0.1s;
-}
-
-nav ul li:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-nav ul li:nth-child(3) {
-    animation-delay: 0.3s;
-}
-
-nav ul li:nth-child(4) {
-    animation-delay: 0.4s;
+nav ul li:hover {
+    color: #ddd; /* Slight change on hover */
 }
 
 .logo {
     font-family: "Noto Sans", sans-serif;
     font-weight: 1000;
+    color: white; /* White logo text */
     transform: translateY(-20px);
     animation: slideDown 0.6s ease forwards;
 }
@@ -76,6 +68,10 @@ body.scrolled nav {
     margin-top: 80px; /* Adjust margin to account for fixed navbar */
     opacity: 0;
     animation: fadeInUp 1s ease-in-out forwards; /* Fade in container */
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border: 2px solid black; /* Black border for containers */
+    border-radius: 10px;
 }
 
 .container form input[type='number'],
@@ -86,6 +82,9 @@ label {
     margin-bottom: 23px;
     display: block;
     font-weight: 600;
+    color: black; /* Black text */
+    background-color: #f0f0f0; /* Light grey background */
+    border: 2px solid black; /* Black border */
     transition: transform 0.3s ease; /* Smooth hover effect for form elements */
 }
 
@@ -97,17 +96,18 @@ label:hover {
 
 .btn {
     width: 144px;
-    padding: 5px 8px;
+    padding: 10px;
     font-size: 20px;
-    background: #e0d0f5;
-    color: rgb(255, 255, 255);
+    background: black;
+    color: white; /* White text */
+    border: 2px solid white;
     border-radius: 23px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for button */
 }
 
 .btn:hover {
-    background: #d0b0f5; /* Change background color on hover */
+    background: #444; /* Lighter black on hover */
     transform: scale(1.1); /* Slightly enlarge button on hover */
 }
 
@@ -129,6 +129,8 @@ label:hover {
 .output table th, .output table td {
     padding: 8px;
     border: 1px solid black;
+    background-color: #fff; /* White background for table cells */
+    color: black; /* Black text */
 }
 
 input {
@@ -216,4 +218,4 @@ input:hover {
     label {
         width: 80vw;
     }
-} 
+}

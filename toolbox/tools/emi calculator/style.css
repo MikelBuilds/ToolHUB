@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
@@ -9,78 +10,87 @@
 body {
     height: 100vh; /* Full viewport height */
     display: flex;
-    flex-direction: column; /* Allows vertical layout of children */
+    flex-direction: column; /* Vertical layout */
     align-items: center; /* Center horizontally */
     justify-content: flex-start; /* Position children at the top */
     font-family: 'Poppins', sans-serif;
-    background-color: #000000;
+    background-color: #1c1c1c; /* Softer black for less eye strain */
+    color: #f4f4f4; /* Softer white text */
 }
 
 nav {
-    height: 50px;
-    border-bottom: solid black 2px;
-    width: 100%; /* Ensure the nav spans the full width */
-}
-
-nav h1 {
-    margin: 20px;
-    font-family: "Protest Guerrilla", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: 0.4em;
-    color: azure;
-    background-color: rgb(35, 20, 0);
-    display: flex;
-    justify-content: center;
-    font-size: xx-large;
-}
-
-.container {
-    background-color: white;
-    border-radius: 8px;
-    height: 530px;
-    width: 879px;
+    height: 60px;
+    width: 100%;
+    background-color: #252525; /* Dark grey background for nav */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    border-width: 4px; /* Border width */
-    border-style: solid; /* Border style */
-    border-color: red green blue yellow;
-    padding: 20px 40px;
+    border-bottom: 2px solid #444; /* Subtle border */
+}
+
+nav h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    color: #f4f4f4;
+    background-color: transparent;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    height: auto; /* Auto-adjust height */
+    width: 80%; /* More responsive width */
+    max-width: 900px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column; /* Column layout */
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border: none;
 }
 
 form {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px; /* Consistent spacing */
 }
 
 label {
     font-weight: 500;
     font-size: 18px;
-    color: #332f2f;
+    color: #333; /* Dark grey text */
 }
 
 input {
     padding: 10px;
     font-size: 16px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+input:focus {
+    border-color: #28a745; /* Green border on focus */
+    outline: none;
 }
 
 button {
-    padding: 12px;
-    background-color: #28a745;
+    padding: 12px 20px;
+    background-color: #28a745; /* Green button */
     color: white;
     font-size: 18px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     font-weight: 600;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
 button:hover {
@@ -90,8 +100,9 @@ button:hover {
 #emiResult {
     margin-top: 20px;
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
+    color: #333;
 }
 
 #emiAmount {
@@ -100,6 +111,12 @@ button:hover {
     font-weight: 700;
 }
 
-footer{
-    color: azure;
+footer {
+    color: #f4f4f4; /* Softer footer text color */
+    margin-top: auto;
+    padding: 20px;
+    background-color: #252525; /* Footer background matches nav */
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
 }
