@@ -15710,6 +15710,40 @@ blockquote .author {
   padding: 40px 25px 30px 35px;
   margin-bottom: 30px;
   background: var(--bs-white);
+  position: relative;
+}
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.recommended_item::after, .recommended_item::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), red, blue, pink, green, red); 
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -2;
+  padding: 100px;
+  border-radius: 20px;
+  animation: 3s spin linear infinite;
+}
+
+.recommended_item::before{
+  filter: blur(0.5rem);
+  opacity: 1;
+}
+
+@keyframes spin{
+  from{
+     --angle: 0deg;
+  }
+  to{
+     --angle: 360deg;
+  }
 }
 .recommended_item img {
   margin-bottom: 25px;
