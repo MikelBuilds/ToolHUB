@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Toolhub</title>
+  <style>
+    body {
+      background-color: #1e1e2f;
+      color: #e0e0eb;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: #0066b2;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    p {
+      max-width: 800px;
+      text-align: center;
+      line-height: 1.6;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .content {
+      text-align: center;
+      padding: 40px;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>About Toolhub</h1>
+    <p>Toolhub is your one-stop platform for a wide range of online tools, including calculators, converters, and productivity aids.
+      Our mission is to provide easy-to-use tools that help streamline everyday tasks, from PDF conversions to financial and health calculations.
+      Whether you're managing your personal finances, boosting your productivity, or tracking your health, Toolhub has you covered.</p>
+  </div>
+</body>
+</html>
