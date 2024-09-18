@@ -7,23 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="calculator">
         <h1>Income Tax Calculator</h1>
         <form id="taxForm">
-            <label for="income">Enter your annual income (₹):</label>
-            <input type="number" id="income" required>
-            <button type="button" onclick="calculateTax()">Calculate Tax</button>
+            <label for="income">Annual Income (INR):</label>
+            <input type="number" id="income" name="income" required>
+            <button type="button" onclick="calculateTax()">Calculate</button>
         </form>
-        <div id="result"></div>
+        <div id="result" class="hidden"></div>
     </div>
-    <div class="more">
-        <h3>
-            For more details visit
-        </h3>
-        
-        <button onclick="window.location.href='https://cleartax.in/paytax/TaxCalculator';" class="link">CLEARTAX WEBPG</button>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
