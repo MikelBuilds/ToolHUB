@@ -15723,17 +15723,27 @@ blockquote .author {
   position: absolute;
   height: 100%;
   width: 100%;
- 
+  background-image: conic-gradient(from var(--angle), red, blue, yellow, green, pink, red);
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-
+  z-index: -1;
   padding: 100px;
   border-radius: 20px;
-  
+  animation: 3s spin linear infinite;
 }
-
-
+.recommended_item::before{
+  filter: blur(0.5rem);
+  opacity: 1;
+}
+@keyframes spin {
+  from{
+   --angle : 0deg;
+  }
+  to{
+   --angle : 360deg;
+  }
+}
 
 .recommended_item img {
   margin-bottom: 25px;
