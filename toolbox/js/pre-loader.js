@@ -1,13 +1,11 @@
 (function ($) {
   "use strict";
 
-  /*============= preloader js css =============*/
   var cites = [];
-  cites[0] =
-    "We design Docy for the readers, optimizing not for page views or engagement";
-  cites[1] = "Docy turns out that context is a key part of learning.";
-  cites[2] = "You can create any type of product documentation with Docy";
-  cites[3] = "Advanced visual search system powered by Ajax";
+  cites[0] = "We design TOOLHUB for TECHIES OUT THERE!";
+  cites[1] = "Learning becomes more effective when the right context is provided.";
+  cites[2] = "With Docy, you can easily create comprehensive documentation for any product.";
+  cites[3] = "An advanced visual search system enhanced with Ajax for faster results.";
   var cite = cites[Math.floor(Math.random() * cites.length)];
   $("#preloader p").text(cite);
   $("#preloader").addClass("loading");
@@ -20,3 +18,4 @@
     }, 500);
   });
 })(jQuery);
+
