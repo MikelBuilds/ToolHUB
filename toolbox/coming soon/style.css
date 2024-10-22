@@ -54,16 +54,7 @@ p {
   }
 }
 
-.cursor {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border-radius: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 2;
-}
+
 
 .cursor-trail {
   position: absolute;
